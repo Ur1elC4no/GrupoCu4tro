@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Contraseñas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>Generador de Contraseñas</h2>
+    
+    <div class="result-box">
+      <input type="text" id="password" readonly placeholder="Tu contraseña aquí">
+    </div>
+
+    <div class="controls">
+      <label for="length">Longitud: <span id="length-val">12</span></label>
+      <input type="range" id="length" min="6" max="30" value="12">
+    </div>
+
+    <button id="btn-generate">Generar Contraseña</button>
+  </div>
+
+  <script src="GeneradorPasswords.js"></script>
+</body>
+</html>
