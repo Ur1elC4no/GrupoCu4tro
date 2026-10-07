@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filtrar tabla en vivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Filtrar tabla en vivo</h1>
+    <p>Escribe para filtrar por cualquier columna.</p>
+
+    <input type="text" id="search-input" placeholder="Buscar..." autocomplete="off">
+
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Ciudad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Juan</td><td>25</td><td>Madrid</td></tr>
+        <tr><td>Ana</td><td>30</td><td>Barcelona</td></tr>
+        <tr><td>Jose</td><td>32</td><td>Granada</td></tr>
+        <tr><td>Pedro</td><td>35</td><td>Valencia</td></tr>
+        <tr><td>Lucía</td><td>28</td><td>Sevilla</td></tr>
+      </tbody>
+    </table>
+
+    <p id="sin-resultados" hidden>No hay coincidencias.</p>
+  </main>
+
+  <script src="reto.js"></script>
+</body>
+</html>
